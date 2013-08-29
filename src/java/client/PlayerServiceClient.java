@@ -25,7 +25,7 @@ public class PlayerServiceClient {
         com.sun.jersey.api.client.config.ClientConfig config = new com.sun.jersey.api.client.config.DefaultClientConfig();
         client = Client.create(config);
         webResource = client.resource(BASE_URI).path("players");
-        System.out.println("webResource="+webResource.toString());
+        //System.out.println("webResource="+webResource.toString());
     }
 
     public void remove(String id) throws UniformInterfaceException {
